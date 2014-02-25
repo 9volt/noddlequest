@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript">
+          var socket = io.connect('http://9volt-developers.com:4000');
+          $(document).ready(function(){
+              $('.buttons').click(function(e){
+                console.log(e);
+                var button = e.target.id;
+                socket.emit('button_pressed', button);
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <input type='button' id="x" class="buttons" value="A"></input>
+        <input type='button' id="z" class="buttons" value="B"></input>
+        <input type='button' id="a" class="buttons" value="X"></input>
+        <input type='button' id="s" class="buttons" value="Y"></input>
+        <input type='button' id="Up" class="buttons" value="Up"></input>
+        <input type='button' id="Down" class="buttons" value="Down"></input>
+        <input type='button' id="Left" class="buttons" value="Left"></input>
+        <input type='button' id="Right" class="buttons" value="Right"></input>
+        <input type='button' id="Return" class="buttons" value="Start"></input>
+    </body>
+</html>
