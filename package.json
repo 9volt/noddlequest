@@ -1,0 +1,10 @@
+{
+  "name": "noodlequest",
+  "version": "0.0.0",
+  "description": "Hello",
+  "main": "app.js",
+  "dependencies": {
+    "bower": "~1.2.8",
+    "socket.io": "~0.9.16"
+  }
+}
