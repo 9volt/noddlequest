@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.0",
-    "crafty": "~0.6.2"
+    "crafty": "~0.6.2",
+    "Crafty-Tiled-Map-Importer": "mleveck/Crafty-Tiled-Map-Importer"
   }
 }
